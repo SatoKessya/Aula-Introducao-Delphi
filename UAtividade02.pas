@@ -131,6 +131,9 @@ procedure TfrmAtividade02.bt_LimpasCamposClick(Sender: TObject);
 begin
   edt_Vlr_1.Clear;
   edt_Vlr_2.Clear;
+  edt_Vlr_2.Clear;
+  lbl_Resultado.Caption := '';
+  lbl_Sinal.Caption := '';
   edt_Vlr_1.SetFocus;
 end;
 

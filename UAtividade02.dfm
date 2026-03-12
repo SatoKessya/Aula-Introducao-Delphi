@@ -3,7 +3,7 @@ object frmAtividade02: TfrmAtividade02
   Top = 0
   Caption = 'Atividade 02'
   ClientHeight = 497
-  ClientWidth = 514
+  ClientWidth = 344
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,28 +13,38 @@ object frmAtividade02: TfrmAtividade02
   Position = poScreenCenter
   TextHeight = 38
   object lbl_Sinal: TLabel
-    Left = 362
-    Top = 96
-    Width = 8
+    Left = 152
+    Top = 12
+    Width = 45
     Height = 38
+    Alignment = taCenter
+    AutoSize = False
   end
   object lbl_Resultado: TLabel
-    Left = 362
-    Top = 11
-    Width = 8
+    Left = 8
+    Top = 80
+    Width = 239
     Height = 38
+    Alignment = taCenter
+    AutoSize = False
+    Color = clBackground
+    ParentColor = False
+    ParentShowHint = False
+    ShowHint = True
+    Transparent = True
+    Layout = tlCenter
   end
   object edt_Vlr_1: TEdit
     Left = 8
     Top = 8
-    Width = 153
+    Width = 119
     Height = 46
     TabOrder = 0
   end
   object edt_Vlr_2: TEdit
-    Left = 8
-    Top = 76
-    Width = 153
+    Left = 216
+    Top = 8
+    Width = 119
     Height = 46
     TabOrder = 1
   end

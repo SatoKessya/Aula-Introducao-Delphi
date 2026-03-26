@@ -2,7 +2,7 @@ object frmAtividade27: TfrmAtividade27
   Left = 0
   Top = 0
   Caption = 'Atividade 27'
-  ClientHeight = 441
+  ClientHeight = 175
   ClientWidth = 661
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -13,10 +13,16 @@ object frmAtividade27: TfrmAtividade27
   TextHeight = 38
   object lblNome: TLabel
     Left = 16
-    Top = 11
+    Top = 8
     Width = 82
     Height = 38
     Caption = 'Nome:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -28
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
   end
   object lblN1: TLabel
     Left = 16
@@ -47,17 +53,23 @@ object frmAtividade27: TfrmAtividade27
     Caption = 'Nota 4:'
   end
   object lblMedia: TLabel
-    Left = 531
+    Left = 548
+    Top = 124
+    Width = 8
+    Height = 38
+  end
+  object lblMensagem: TLabel
+    Left = 16
+    Top = 185
+    Width = 8
+    Height = 38
+  end
+  object Label1: TLabel
+    Left = 546
     Top = 76
     Width = 77
     Height = 38
     Caption = 'M'#233'dia'
-  end
-  object lblMensagem: TLabel
-    Left = 16
-    Top = 193
-    Width = 626
-    Height = 38
   end
   object btCalcular: TButton
     Left = 503
@@ -102,12 +114,5 @@ object frmAtividade27: TfrmAtividade27
     Width = 89
     Height = 46
     TabOrder = 5
-  end
-  object edtMedia: TEdit
-    Left = 531
-    Top = 120
-    Width = 111
-    Height = 46
-    TabOrder = 6
   end
 end

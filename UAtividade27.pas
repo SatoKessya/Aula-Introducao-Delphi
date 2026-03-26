@@ -21,7 +21,7 @@ type
     edtN3: TEdit;
     edtN4: TEdit;
     lblMensagem: TLabel;
-    edtMedia: TEdit;
+    Label1: TLabel;
     procedure btCalcularClick(Sender: TObject);
   private
     { Private declarations }
@@ -54,6 +54,8 @@ begin
 
   lblMensagem.caption := 'Aluno (a) ' +  edtNome.Text + ' a sua média final foi '
   + FloatToStr(Media) + ' .';
+
+  Height := 273;
 
 end;
 

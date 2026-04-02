@@ -16,7 +16,9 @@ type
     lblSenha: TLabel;
     Panel1: TPanel;
     procedure btAcessarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
+    usuarioLogin, usuario, senhaLogin, senha: String;
     { Private declarations }
   public
     { Public declarations }
@@ -30,22 +32,22 @@ implementation
 {$R *.dfm}
 
 procedure TfrmAtividade31.btAcessarClick(Sender: TObject);
-var
-  senha, usuario: String;
 begin
-  usuario := edtLogin.Text;
-  senha := edtSenha.Text;
+  usuarioLogin := edtLogin.Text;
+  senhaLogin := edtSenha.Text;
 
-  if (usuario = 'User 1') and (senha = '147') then
-    ShowMessage('Login aceito!')
-  else if (usuario <> 'User 1') and (senha = '147') then
-    ShowMessage('Login incorreto!')
-  else if (usuario = 'User 1') and (senha <> '147') then
-    ShowMessage('Senha incorreta!')
-  else if (usuario = '') and (senha = '') then
+  if (usuario = '') and (senha = '') then
     ShowMessage('Os campos estão vazios. Digite as informações necessárias!')
+  else if (usuario = usuarioLogin) and (senha = senhaLogin) then
+    ShowMessage('Login aceito!')
   else
     ShowMessage('Dados incorretos!');
+end;
+
+procedure TfrmAtividade31.FormCreate(Sender: TObject);
+begin
+  usuario := 'admin';
+  senha := '147';
 end;
 
 end.

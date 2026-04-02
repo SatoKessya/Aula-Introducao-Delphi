@@ -11,6 +11,7 @@ object frmAtividade31: TfrmAtividade31
   Font.Name = 'Segoe UI'
   Font.Style = []
   Position = poDesktopCenter
+  OnCreate = FormCreate
   TextHeight = 30
   object Panel1: TPanel
     Left = 0

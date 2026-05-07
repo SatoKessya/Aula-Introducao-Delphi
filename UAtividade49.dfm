@@ -1,7 +1,7 @@
-object frmAtividade48: TfrmAtividade48
+object frmAtividade49: TfrmAtividade49
   Left = 0
   Top = 0
-  Caption = 'Atividade 48'
+  Caption = 'Atividade 49'
   ClientHeight = 168
   ClientWidth = 312
   Color = clBtnFace
@@ -10,7 +10,6 @@ object frmAtividade48: TfrmAtividade48
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  Position = poScreenCenter
   OnShow = FormShow
   TextHeight = 15
   object lblMensagem: TLabel
@@ -19,10 +18,5 @@ object frmAtividade48: TfrmAtividade48
     Width = 281
     Height = 137
     AutoSize = False
-  end
-  object Timer1: TTimer
-    Enabled = False
-    Left = 8
-    Top = 8
   end
 end

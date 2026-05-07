@@ -11,7 +11,6 @@ type
     lblMensagem: TLabel;
     Timer1: TTimer;
     procedure FormShow(Sender: TObject);
-    procedure Timer1Timer(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,12 +25,6 @@ implementation
 {$R *.dfm}
 
 procedure TfrmAtividade48.FormShow(Sender: TObject);
-begin
-  Timer1.Interval := 10;
-  Timer1.Enabled := True;
-end;
-
-procedure TfrmAtividade48.Timer1Timer(Sender: TObject);
 var
   valorDigitado: String;
   num: Integer;
@@ -39,8 +32,6 @@ var
   quantidade: Integer;
   media: Real;
 begin
-  Timer1.Enabled := False;
-
   soma := 0;
   quantidade := 0;
 
@@ -65,7 +56,7 @@ begin
                'Soma: ' + IntToStr(soma) + #13 +
                'Média: ' + FloatToStr(media));
 
-  Close;
+  PostMessage(Self.Handle, WM_Close, 0, 0);
 end;
 
 end.
